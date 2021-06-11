@@ -46,7 +46,7 @@
     "extra": {
         "laravel": {
             "providers": [
-              "FortifyUIBootstrapServiceProvider"
+              "drewwalton19216801\\FortifyUIBootstrap\\FortifyUIBootstrapServiceProvider"
             ]
         }
     },
