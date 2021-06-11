@@ -1,11 +1,11 @@
 <?php
 
-namespace YourNamespace\FortifyUIPreset;
+namespace drewwalton19216801\FortifyUIBootstrap;
 
 use Illuminate\Support\ServiceProvider;
-use YourNamespace\FortifyUIPreset\Commands\FortifyUIPresetCommand;
+use drewwalton19216801\FortifyUIBootstrap\Commands\FortifyUIBootstrapCommand;
 
-class FortifyUIPresetServiceProvider extends ServiceProvider
+class FortifyUIBootstrapServiceProvider extends ServiceProvider
 {
     public function boot()
     {
@@ -13,10 +13,10 @@ class FortifyUIPresetServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__ . '/../stubs/resources/views' => base_path('resources/views'),
                 // Add more resources here
-            ], 'fortify-ui-preset-resources');
+            ], 'fortify-ui-bootstrap-resources');
 
             $this->commands([
-                FortifyUIPresetCommand::class,
+                FortifyUIBootstrapCommand::class,
             ]);
         }
     }

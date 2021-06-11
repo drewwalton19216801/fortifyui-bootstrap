@@ -23,7 +23,7 @@ Here are the steps to customize this template with your preset
 
 # Introduction
 
-**YourPreset** is a Laravel Fortify UI preset, built with SomeFramework.
+**FortifyUI-Bootstrap** is a Laravel Fortify UI preset, built with Bootstrap 5.
 
 - [Requirements](#requirements)
 - [Installation](#installation)
@@ -39,13 +39,13 @@ This package requires Laravel Fortify and FortifyUI. Installing [*FortifyUI*](ht
 To get started, you'll need to install **YourPreset** using Composer.
 
 ```bash
-composer require yournamespace/fortify-yourpreset
+composer require drewwalton/fortifyui-bootstrap
 ```
 
 Next, you'll need to run the install command:
 
 ```bash
-php artisan fortify:yourpreset
+php artisan fortify:bootstrap
 ```
 
 This command will publish **YourPreset's** views and resources to your project.

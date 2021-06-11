@@ -1,6 +1,6 @@
 <?php
 
-namespace YourNamespace\FortifyUIPreset\Tests;
+namespace drewwalton19216801\FortifyUIBootstrap\Tests;
 
 class ExampleTest extends TestCase
 {

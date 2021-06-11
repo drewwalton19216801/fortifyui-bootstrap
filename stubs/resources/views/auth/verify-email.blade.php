@@ -1,29 +1,24 @@
-@extends('layouts.app')
+@extends('layouts.auth')
 
 @section('content')
-    <div>
-        {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
-    </div>
-
     @if (session('status') == 'verification-link-sent')
-        <div>
-            {{ __('A new verification link has been sent to the email address you provided during registration.') }}
+        <div class="alert alert-success">
+            {{ __('auth.resendconfirmation') }}
         </div>
     @endif
 
-    <form method="POST" action="{{ route('verification.send') }}">
-        @csrf
-
-        <button type="submit">
-            {{ __('Resend Verification Email') }}
-        </button>
-    </form>
-
-    <form method="POST" action="{{ route('logout') }}">
-        @csrf
-
-        <button type="submit">
-            {{ __('Logout') }}
-        </button>
-    </form>
+    <div class="card card-md">
+        <div class="card-body">
+            <h2 class="text-center">{{ __('auth.emailverification') }}</h2>
+            <p class="text-center mx-2">
+                {{ __('auth.emailverificationtext') }}
+            </p>
+            <form method="POST" action="{{ route('verification.send') }}">
+                @csrf
+                <div class="">
+                    <button type="submit" class="btn btn-primary w-100" tabindex="2">{{ __('auth.resend') }}</button>
+                </div>
+            </form>
+        </div>
+    </div>
 @endsection

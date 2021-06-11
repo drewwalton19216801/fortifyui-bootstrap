@@ -1,16 +1,16 @@
 {
-    "name": "yournamespace/fortify-yourpreset",
-    "description": "Fortify-driven Laravel UI replacement",
+    "name": "drewwalton19216801/fortifyui-bootstrap",
+    "description": "Fortify-driven Laravel UI replacement using Bootstrap 5",
     "keywords": [
         "fortify-ui"
     ],
-    "homepage": "https://github.com/yourusername/fortify-yourpreset",
+    "homepage": "https://github.com/drewwalton19216801/fortifyui-bootstrap",
     "license": "MIT",
     "authors": [
         {
-            "name": "Your Name",
-            "email": "you@yourdomain.com",
-            "homepage": "https://yourusername.github.io",
+            "name": "Drew Walton",
+            "email": "drewwalton19216801@gmail.com",
+            "homepage": "https://github.com/drewwalton19216801/fortifyui-bootstrap",
             "role": "Developer"
         }
     ],
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "YourNamespace\\FortifyUIPreset\\": "src"
+            "drewwalton19216801\\FortifyUIBootstrap\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "YourNamespace\\FortifyUIPreset\\Tests\\": "tests"
+            "drewwalton19216801\\FortifyUIBootstrap\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -46,7 +46,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "YourNamespace\\FortifyUIPreset\\FortifyUIPresetServiceProvider"
+              "FortifyUIBootstrapServiceProvider"
             ]
         }
     },

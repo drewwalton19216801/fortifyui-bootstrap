@@ -1,6 +1,6 @@
 <?php
 
-namespace YourNamespace\FortifyUIPreset\Tests;
+namespace drewwalton19216801\FortifyUIBootstrap\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -14,7 +14,7 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            FortifyUIPresetServiceProvider::class,
+            FortifyUIBootstrapServiceProvider::class,
         ];
     }
 }
